@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/task1.dir/home/cs104/Downloads/code2/MAPFInstance.cpp.o CMakeFiles/task1.dir/home/cs104/Downloads/code2/AStarPlanner.cpp.o CMakeFiles/task1.dir/task1.cpp.o  -o task1 -rdynamic 
