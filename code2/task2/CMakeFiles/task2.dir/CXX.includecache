@@ -20,9 +20,9 @@ list
 string
 -
 
-/home/cs104/Downloads/code2/AStarPlanner.cpp
+/home/cs104/Downloads/csci360proj2/code2/AStarPlanner.cpp
 AStarPlanner.h
-/home/cs104/Downloads/code2/AStarPlanner.h
+/home/cs104/Downloads/csci360proj2/code2/AStarPlanner.h
 queue
 -
 unordered_map
@@ -32,21 +32,21 @@ algorithm
 iostream
 -
 
-/home/cs104/Downloads/code2/AStarPlanner.h
+/home/cs104/Downloads/csci360proj2/code2/AStarPlanner.h
 MAPFInstance.h
-/home/cs104/Downloads/code2/MAPFInstance.h
+/home/cs104/Downloads/csci360proj2/code2/MAPFInstance.h
 ostream
 -
 
-/home/cs104/Downloads/code2/MAPFInstance.cpp
+/home/cs104/Downloads/csci360proj2/code2/MAPFInstance.cpp
 MAPFInstance.h
-/home/cs104/Downloads/code2/MAPFInstance.h
+/home/cs104/Downloads/csci360proj2/code2/MAPFInstance.h
 fstream
 -
 iostream
 -
 
-/home/cs104/Downloads/code2/MAPFInstance.h
+/home/cs104/Downloads/csci360proj2/code2/MAPFInstance.h
 vector
 -
 list
@@ -54,15 +54,15 @@ list
 string
 -
 
-/home/cs104/Downloads/code2/task2/task2.cpp
+/home/cs104/Downloads/csci360proj2/code2/task2/task2.cpp
 iostream
 -
 fstream
 -
 MAPFInstance.h
-/home/cs104/Downloads/code2/task2/MAPFInstance.h
+/home/cs104/Downloads/csci360proj2/code2/task2/MAPFInstance.h
 AStarPlanner.h
-/home/cs104/Downloads/code2/task2/AStarPlanner.h
+/home/cs104/Downloads/csci360proj2/code2/task2/AStarPlanner.h
 tuple
 -
 

@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/cs104/Downloads/code2/task2/.. 
+CXX_INCLUDES = -I/home/cs104/Downloads/csci360proj2/code2/task2/.. 
 

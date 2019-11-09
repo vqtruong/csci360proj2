@@ -25,8 +25,9 @@ Path AStarPlanner::make_path(const AStarNode* goal_node) const {
 }
 
 // Returns true if moving from curr to next is constrained
-bool AStarPlanner::isConstrained(list<Constraint> constraints, AStarNode* curr, AStarNode* next, int agent_id) const {
+bool AStarPlanner::isConstrained(const list<Constraint>& constraints, AStarNode* curr, AStarNode* next, int agent_id) const {
     for (auto i = constraints.begin(); i != constraints.end(); ++i) {
+        // cout << get<0>(*i) << " , " << get<1>(*i) << " , " << get<2>(*i) << " , " << get<3>(*i) << endl;
         if (get<0>(*i) == agent_id ) {
             // Permanent constraints
             if (get<3>(*i) < 0 && get<3>(*i)*-1 <= curr->timestep && get<1>(*i) == curr->location) {
@@ -62,6 +63,8 @@ Path AStarPlanner::find_path(int agent_id, const list<Constraint>& constraints, 
     // Open list
     priority_queue<AStarNode*, vector<AStarNode*>, CompareAStarNode> open;
 
+    
+
     // Unordered map is an associative container that contains key-value pairs with unique keys.
     // The following unordered map is used for duplicate detection, where the key is the location of the node.
     // unordered_map<int, AStarNode*> all_nodes;
@@ -80,7 +83,6 @@ Path AStarPlanner::find_path(int agent_id, const list<Constraint>& constraints, 
     while (!open.empty()) {
         AStarNode* curr = open.top();
         open.pop();
-        cout << curr->location << " for  agent " << agent_id << " at time " << curr->timestep << std::endl;
 
         // Arrived at goal state
         if (curr->location == goal_location && !isGoalConstrained(constraints, curr, agent_id)) {
@@ -89,7 +91,6 @@ Path AStarPlanner::find_path(int agent_id, const list<Constraint>& constraints, 
         }
 
         if (curr->timestep > max) {
-            cout << "RETUUUURN" << endl;
             return Path();
         }
         // For all children of the current location
@@ -105,7 +106,7 @@ Path AStarPlanner::find_path(int agent_id, const list<Constraint>& constraints, 
                 int next_g = curr->g + 1;
                 int next_h = ins.get_Manhattan_distance(next_location, goal_location);
                 AStarNode* next = new AStarNode(next_location, next_g, next_h, curr, curr->timestep+1);
-                bool constrained = isConstrained(mConstraints, curr, next, agent_id);
+                bool constrained = isConstrained(constraints, curr, next, agent_id);
 
                 if (!constrained) {
                     open.push(next);

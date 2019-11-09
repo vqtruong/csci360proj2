@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/cs104/Downloads/code2/AStarPlanner.cpp" "/home/cs104/Downloads/code2/task2/CMakeFiles/task2.dir/home/cs104/Downloads/code2/AStarPlanner.cpp.o"
-  "/home/cs104/Downloads/code2/MAPFInstance.cpp" "/home/cs104/Downloads/code2/task2/CMakeFiles/task2.dir/home/cs104/Downloads/code2/MAPFInstance.cpp.o"
-  "/home/cs104/Downloads/code2/task2/task2.cpp" "/home/cs104/Downloads/code2/task2/CMakeFiles/task2.dir/task2.cpp.o"
+  "/home/cs104/Downloads/csci360proj2/code2/AStarPlanner.cpp" "/home/cs104/Downloads/csci360proj2/code2/task2/CMakeFiles/task2.dir/home/cs104/Downloads/csci360proj2/code2/AStarPlanner.cpp.o"
+  "/home/cs104/Downloads/csci360proj2/code2/MAPFInstance.cpp" "/home/cs104/Downloads/csci360proj2/code2/task2/CMakeFiles/task2.dir/home/cs104/Downloads/csci360proj2/code2/MAPFInstance.cpp.o"
+  "/home/cs104/Downloads/csci360proj2/code2/task2/task2.cpp" "/home/cs104/Downloads/csci360proj2/code2/task2/CMakeFiles/task2.dir/task2.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

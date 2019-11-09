@@ -40,25 +40,25 @@ int main(int argc, char *argv[]) {
 
         // Add constraints for future agents
         for (int k : priorities) {
-        	if (k != i) {
-			    for(int j = 0; j < paths[i].size(); ++j) {
-			    	// Vertex Constraints
-		        	cout << "Agent " << k << " cannot be at " << paths[i][j] << " at time " << j << endl;
-		        	a_star.mConstraints.push_back(make_tuple(k, paths[i][j], -1, j));
+            if (k != i) {
+                for(int j = 0; j < paths[i].size(); ++j) {
+                    // Vertex Constraints
+                    cout << "Agent " << k << " cannot be at " << paths[i][j] << " at time " << j << endl;
+                    a_star.mConstraints.push_back(make_tuple(k, paths[i][j], -1, j));
 
-    			    // Add edge constraints from a->b and b->a
-		        	if (j != 0) {
-			            cout << "Agent " << k << " cannot go to " << paths[i][j-1] << " from " << paths[i][j] << " at time " << j << endl;
-			            a_star.mConstraints.push_back(make_tuple(k, paths[i][j], paths[i][j-1], j));
-			            a_star.mConstraints.push_back(make_tuple(k, paths[i][j-1], paths[i][j], j));
-			        }
-		        }
+                    // Add edge constraints from a->b and b->a
+                    if (j != 0) {
+                        cout << "Agent " << k << " cannot go to " << paths[i][j-1] << " from " << paths[i][j] << " at time " << j << endl;
+                        a_star.mConstraints.push_back(make_tuple(k, paths[i][j], paths[i][j-1], j));
+                        a_star.mConstraints.push_back(make_tuple(k, paths[i][j-1], paths[i][j], j));
+                    }
+                }
 
-		        // Block agents indefinitely for the future
-		        a_star.mConstraints.push_back(make_tuple(k, paths[i][paths[i].size()-1], -1, ((int)paths[i].size()-1) * -1));
-		        cout << "Agent " << k << " cannot go to " << paths[i][paths[i].size()-1] << " after time " << ((int)paths[i].size()-1)*-1 << endl;
-		    }
-	    }
+                // Block agents indefinitely for the future
+                a_star.mConstraints.push_back(make_tuple(k, paths[i][paths[i].size()-1], -1, ((int)paths[i].size()-1) * -1));
+                cout << "Agent " << k << " cannot go to " << paths[i][paths[i].size()-1] << " after time " << ((int)paths[i].size()-1)*-1 << endl;
+            }
+        }
     }
 
     // print paths

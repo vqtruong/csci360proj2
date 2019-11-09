@@ -51,13 +51,12 @@ struct CompareAStarNode {
 class AStarPlanner {
 public:
     const MAPFInstance& ins;
-    list<Constraint> mConstraints;
     AStarPlanner(const MAPFInstance& ins): ins(ins) {}
     Path find_path(int agent_id, const list<Constraint>& constraints, int agentPriority);
 private:
     // used to retrieve the path from the goal node
     Path make_path(const AStarNode* goal_node) const;
-    bool isConstrained(list<Constraint> constraints, AStarNode* curr, AStarNode* next, int agent_id) const;
+    bool isConstrained(const list<Constraint>& constraints, AStarNode* curr, AStarNode* next, int agent_id) const;
     bool isGoalConstrained(list<Constraint> constraints, AStarNode* curr, int agent_id) const;
 
     void clear();

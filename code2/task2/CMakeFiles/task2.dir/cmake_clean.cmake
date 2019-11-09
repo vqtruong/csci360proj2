@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/task2.dir/home/cs104/Downloads/code2/MAPFInstance.cpp.o"
-  "CMakeFiles/task2.dir/home/cs104/Downloads/code2/AStarPlanner.cpp.o"
+  "CMakeFiles/task2.dir/home/cs104/Downloads/csci360proj2/code2/MAPFInstance.cpp.o"
+  "CMakeFiles/task2.dir/home/cs104/Downloads/csci360proj2/code2/AStarPlanner.cpp.o"
   "CMakeFiles/task2.dir/task2.cpp.o"
   "task2.pdb"
   "task2"

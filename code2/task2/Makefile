@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cs104/Downloads/code2/task2
+CMAKE_SOURCE_DIR = /home/cs104/Downloads/csci360proj2/code2/task2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cs104/Downloads/code2/task2
+CMAKE_BINARY_DIR = /home/cs104/Downloads/csci360proj2/code2/task2
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs104/Downloads/code2/task2/CMakeFiles /home/cs104/Downloads/code2/task2/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs104/Downloads/csci360proj2/code2/task2/CMakeFiles /home/cs104/Downloads/csci360proj2/code2/task2/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs104/Downloads/code2/task2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs104/Downloads/csci360proj2/code2/task2/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,59 +123,59 @@ task2/fast:
 	$(MAKE) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/build
 .PHONY : task2/fast
 
-home/cs104/Downloads/code2/AStarPlanner.o: home/cs104/Downloads/code2/AStarPlanner.cpp.o
+home/cs104/Downloads/csci360proj2/code2/AStarPlanner.o: home/cs104/Downloads/csci360proj2/code2/AStarPlanner.cpp.o
 
-.PHONY : home/cs104/Downloads/code2/AStarPlanner.o
-
-# target to build an object file
-home/cs104/Downloads/code2/AStarPlanner.cpp.o:
-	$(MAKE) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/home/cs104/Downloads/code2/AStarPlanner.cpp.o
-.PHONY : home/cs104/Downloads/code2/AStarPlanner.cpp.o
-
-home/cs104/Downloads/code2/AStarPlanner.i: home/cs104/Downloads/code2/AStarPlanner.cpp.i
-
-.PHONY : home/cs104/Downloads/code2/AStarPlanner.i
-
-# target to preprocess a source file
-home/cs104/Downloads/code2/AStarPlanner.cpp.i:
-	$(MAKE) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/home/cs104/Downloads/code2/AStarPlanner.cpp.i
-.PHONY : home/cs104/Downloads/code2/AStarPlanner.cpp.i
-
-home/cs104/Downloads/code2/AStarPlanner.s: home/cs104/Downloads/code2/AStarPlanner.cpp.s
-
-.PHONY : home/cs104/Downloads/code2/AStarPlanner.s
-
-# target to generate assembly for a file
-home/cs104/Downloads/code2/AStarPlanner.cpp.s:
-	$(MAKE) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/home/cs104/Downloads/code2/AStarPlanner.cpp.s
-.PHONY : home/cs104/Downloads/code2/AStarPlanner.cpp.s
-
-home/cs104/Downloads/code2/MAPFInstance.o: home/cs104/Downloads/code2/MAPFInstance.cpp.o
-
-.PHONY : home/cs104/Downloads/code2/MAPFInstance.o
+.PHONY : home/cs104/Downloads/csci360proj2/code2/AStarPlanner.o
 
 # target to build an object file
-home/cs104/Downloads/code2/MAPFInstance.cpp.o:
-	$(MAKE) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/home/cs104/Downloads/code2/MAPFInstance.cpp.o
-.PHONY : home/cs104/Downloads/code2/MAPFInstance.cpp.o
+home/cs104/Downloads/csci360proj2/code2/AStarPlanner.cpp.o:
+	$(MAKE) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/home/cs104/Downloads/csci360proj2/code2/AStarPlanner.cpp.o
+.PHONY : home/cs104/Downloads/csci360proj2/code2/AStarPlanner.cpp.o
 
-home/cs104/Downloads/code2/MAPFInstance.i: home/cs104/Downloads/code2/MAPFInstance.cpp.i
+home/cs104/Downloads/csci360proj2/code2/AStarPlanner.i: home/cs104/Downloads/csci360proj2/code2/AStarPlanner.cpp.i
 
-.PHONY : home/cs104/Downloads/code2/MAPFInstance.i
+.PHONY : home/cs104/Downloads/csci360proj2/code2/AStarPlanner.i
 
 # target to preprocess a source file
-home/cs104/Downloads/code2/MAPFInstance.cpp.i:
-	$(MAKE) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/home/cs104/Downloads/code2/MAPFInstance.cpp.i
-.PHONY : home/cs104/Downloads/code2/MAPFInstance.cpp.i
+home/cs104/Downloads/csci360proj2/code2/AStarPlanner.cpp.i:
+	$(MAKE) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/home/cs104/Downloads/csci360proj2/code2/AStarPlanner.cpp.i
+.PHONY : home/cs104/Downloads/csci360proj2/code2/AStarPlanner.cpp.i
 
-home/cs104/Downloads/code2/MAPFInstance.s: home/cs104/Downloads/code2/MAPFInstance.cpp.s
+home/cs104/Downloads/csci360proj2/code2/AStarPlanner.s: home/cs104/Downloads/csci360proj2/code2/AStarPlanner.cpp.s
 
-.PHONY : home/cs104/Downloads/code2/MAPFInstance.s
+.PHONY : home/cs104/Downloads/csci360proj2/code2/AStarPlanner.s
 
 # target to generate assembly for a file
-home/cs104/Downloads/code2/MAPFInstance.cpp.s:
-	$(MAKE) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/home/cs104/Downloads/code2/MAPFInstance.cpp.s
-.PHONY : home/cs104/Downloads/code2/MAPFInstance.cpp.s
+home/cs104/Downloads/csci360proj2/code2/AStarPlanner.cpp.s:
+	$(MAKE) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/home/cs104/Downloads/csci360proj2/code2/AStarPlanner.cpp.s
+.PHONY : home/cs104/Downloads/csci360proj2/code2/AStarPlanner.cpp.s
+
+home/cs104/Downloads/csci360proj2/code2/MAPFInstance.o: home/cs104/Downloads/csci360proj2/code2/MAPFInstance.cpp.o
+
+.PHONY : home/cs104/Downloads/csci360proj2/code2/MAPFInstance.o
+
+# target to build an object file
+home/cs104/Downloads/csci360proj2/code2/MAPFInstance.cpp.o:
+	$(MAKE) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/home/cs104/Downloads/csci360proj2/code2/MAPFInstance.cpp.o
+.PHONY : home/cs104/Downloads/csci360proj2/code2/MAPFInstance.cpp.o
+
+home/cs104/Downloads/csci360proj2/code2/MAPFInstance.i: home/cs104/Downloads/csci360proj2/code2/MAPFInstance.cpp.i
+
+.PHONY : home/cs104/Downloads/csci360proj2/code2/MAPFInstance.i
+
+# target to preprocess a source file
+home/cs104/Downloads/csci360proj2/code2/MAPFInstance.cpp.i:
+	$(MAKE) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/home/cs104/Downloads/csci360proj2/code2/MAPFInstance.cpp.i
+.PHONY : home/cs104/Downloads/csci360proj2/code2/MAPFInstance.cpp.i
+
+home/cs104/Downloads/csci360proj2/code2/MAPFInstance.s: home/cs104/Downloads/csci360proj2/code2/MAPFInstance.cpp.s
+
+.PHONY : home/cs104/Downloads/csci360proj2/code2/MAPFInstance.s
+
+# target to generate assembly for a file
+home/cs104/Downloads/csci360proj2/code2/MAPFInstance.cpp.s:
+	$(MAKE) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/home/cs104/Downloads/csci360proj2/code2/MAPFInstance.cpp.s
+.PHONY : home/cs104/Downloads/csci360proj2/code2/MAPFInstance.cpp.s
 
 task2.o: task2.cpp.o
 
@@ -213,12 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... task2"
-	@echo "... home/cs104/Downloads/code2/AStarPlanner.o"
-	@echo "... home/cs104/Downloads/code2/AStarPlanner.i"
-	@echo "... home/cs104/Downloads/code2/AStarPlanner.s"
-	@echo "... home/cs104/Downloads/code2/MAPFInstance.o"
-	@echo "... home/cs104/Downloads/code2/MAPFInstance.i"
-	@echo "... home/cs104/Downloads/code2/MAPFInstance.s"
+	@echo "... home/cs104/Downloads/csci360proj2/code2/AStarPlanner.o"
+	@echo "... home/cs104/Downloads/csci360proj2/code2/AStarPlanner.i"
+	@echo "... home/cs104/Downloads/csci360proj2/code2/AStarPlanner.s"
+	@echo "... home/cs104/Downloads/csci360proj2/code2/MAPFInstance.o"
+	@echo "... home/cs104/Downloads/csci360proj2/code2/MAPFInstance.i"
+	@echo "... home/cs104/Downloads/csci360proj2/code2/MAPFInstance.s"
 	@echo "... task2.o"
 	@echo "... task2.i"
 	@echo "... task2.s"
