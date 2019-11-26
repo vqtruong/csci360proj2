@@ -61,13 +61,7 @@ vector<Path> CBS::find_solution() {
             constraints.emplace_back(make_tuple(get<1>(collision), get<2>(collision),-1, get<4>(collision)));
             constraints.emplace_back(make_tuple(get<0>(collision), get<2>(collision),-1, get<4>(collision)));
         }
-        else if (get<4>(collision) < 0) {
-            // <agentA, agentB, location, timeThatBMovesThrough, settleDownTime>
-            int t = get<4>(collision) * -1;
-            int third = get<3>(collision)/2;
-            constraints.emplace_back(make_tuple(get<0>(collision), get<2>(collision), -1, get<4>(collision)));
-            constraints.emplace_back(make_tuple(get<1>(collision), get<2>(collision), -1, get<3>(collision)/2));
-        }
+
         // Edge Constraints
         else {
             constraints.emplace_back(make_tuple(get<0>(collision), get<2>(collision), get<3>(collision), get<4>(collision)));
@@ -165,18 +159,11 @@ Collision CBS::findCollision(vector<Path> paths) {
                     }
                 }
                 // Add permanent constraints
-                positions[make_pair(paths[i][j], -1*j)] = i;
+                // positions[make_pair(paths[i][j], -1*j)];
             }
-            for (int k = j; j < maxTime; ++k) {
-                if (positions.end() != positions.find(make_pair(paths[i][j], -1*k))) {
-                    return make_tuple(i, positions[make_pair(paths[i][j], -1*k)], paths[i][j], -2*j, -1*k); // meed to encode 2 times
-                    // <agentA, agentB, location, timeThatBMovesThrough, settleDownTime>
-                    // j is the time that b move through a
-                    // k is the time that a settles down
-                }
-            }
-
             positions[make_pair(paths[i][j], j)] = i;
+
+
             // cout << "\nCURRENT MAP: " << endl;
             // for (auto it: positions) {
             //     auto p = it.first;

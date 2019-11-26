@@ -31,7 +31,6 @@ bool AStarPlanner::isConstrained(const list<Constraint>& constraints, AStarNode*
         if (get<0>(*i) == agent_id ) {
             // Permanent constraints
             if (get<3>(*i) < 0 && get<3>(*i)*-1 <= curr->timestep && get<1>(*i) == curr->location) {
-                // cout << "\tCannot enter because permanent block" << endl;
                 return true;
             }
             // Vertex contraints

@@ -4,7 +4,11 @@
 #include "CBS.h"
 #include <tuple>
 
-int main(int argc, char *argv[]) {
+int testPriority(int argc, char* argv[]) {
+
+}
+
+int testCBS(int argc, char* argv[]) {
     MAPFInstance ins;
     string input_file = argv[1];
     string output_file = argv[2];
@@ -15,6 +19,7 @@ int main(int argc, char *argv[]) {
         exit(-1);
     }
 
+    // UNCOMMENT FOR TASK3.1
     CBS cbs(ins);
     vector<Path> paths = cbs.find_solution();
     if (paths.empty()) { // Fail to find solutions
@@ -43,4 +48,9 @@ int main(int argc, char *argv[]) {
         exit(-1);
     }
     return 0;
+}
+
+int main(int argc, char *argv[]) {
+    return testCBS(argc, argv);
+    // return testPriority(argc, argv);
 }
